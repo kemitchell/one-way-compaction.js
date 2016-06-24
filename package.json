@@ -1,0 +1,21 @@
+{
+  "name": "one-way-compaction",
+  "description": "compact and randomly reorder a log of key-value put and delete operations",
+  "version": "0.0.0",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "dependencies": {
+    "fisher-yates": "^1.0.3",
+    "mersenne-twister": "^1.0.1",
+    "once": "^1.3.3",
+    "through2": "^2.0.1"
+  },
+  "devDependencies": {
+    "stream-array": "^1.1.2",
+    "tape": "^4.6.0"
+  },
+  "license": "MIT",
+  "repository": "kemitchell/one-way-compaction.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
