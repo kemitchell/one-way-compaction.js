@@ -1,7 +1,7 @@
 {
   "name": "one-way-compaction",
   "description": "compact and randomly reorder a log of key-value put and delete operations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "dependencies": {
     "fisher-yates": "^1.0.3",
