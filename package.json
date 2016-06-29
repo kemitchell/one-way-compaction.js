@@ -9,12 +9,14 @@
     "once": "^1.3.3"
   },
   "devDependencies": {
+    "standard": "^7.1.2",
     "stream-array": "^1.1.2",
     "tape": "^4.6.0"
   },
   "license": "MIT",
   "repository": "kemitchell/one-way-compaction.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "lint": "standard"
   }
 }
