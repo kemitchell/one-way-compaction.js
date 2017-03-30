@@ -7,7 +7,7 @@ var DELETED = {}
 
 module.exports = function (log, keyOf, valueOf, isDelete, put, hash, callback) {
   once(callback)
-  // The computer state of the key-value store updated by the log.
+  // The computed state of the key-value store updated by the log.
   var state = { }
   log
     .on('error', function (error) { callback(error) })
