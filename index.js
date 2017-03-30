@@ -5,7 +5,9 @@ var shuffle = require('fisher-yates/inplace')
 // Singleton object used to mark deleted key-value pairs.
 var DELETED = {}
 
-module.exports = function (log, keyOf, valueOf, isDelete, put, hash, callback) {
+module.exports = function (
+  log, keyOf, valueOf, isDelete, put, hash, callback
+) {
   once(callback)
   // The computed state of the key-value store updated by the log.
   var state = { }
@@ -29,7 +31,7 @@ module.exports = function (log, keyOf, valueOf, isDelete, put, hash, callback) {
           return value === DELETED
             ? compacted
             : compacted.concat(put(key, value))
-        }, [ ])
+        }, [])
       // Reorder the compacted log, using the seed.
       reorder(compacted, seed)
       callback(null, compacted)
